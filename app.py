@@ -14,7 +14,7 @@ def hello():
 def ping():
     return "pong"
 
-# Route to render an HTML template with dynamic data
+
 @app.route("/greet/<name>")
 def greet(name):
     return render_template("greet.html", name=name)
